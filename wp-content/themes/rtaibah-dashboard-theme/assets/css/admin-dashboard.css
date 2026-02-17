@@ -1,0 +1,58 @@
+.rtaibah-dashboard-page {
+  direction: rtl;
+}
+
+.rtaibah-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.rtaibah-cards .card {
+  background: #fff;
+  border: 1px solid #d7e2ea;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.rtaibah-cards .card strong {
+  display: block;
+  margin-top: 6px;
+  color: #0e4f72;
+  font-size: 1.6rem;
+}
+
+.rtaibah-chart {
+  background: #fff;
+  border: 1px solid #d7e2ea;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+#rtaibah-chart-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chart-row {
+  display: grid;
+  grid-template-columns: 180px 1fr 60px;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.bar-wrap {
+  height: 10px;
+  background: #edf3f8;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.bar {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #0e4f72, #0f7a8f);
+}

@@ -1,0 +1,115 @@
+/*
+Theme Name: Rtaibah Interactive Theme
+Theme URI: https://rtaibah.org.sa/
+Author: Rtaibah Team
+Author URI: https://rtaibah.org.sa/
+Description: قالب مخصص لموقع رتائب مع لوحة تحكم تفاعلية داخل لوحة إدارة ووردبريس.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.5
+Requires PHP: 7.4
+Text Domain: rtaibah-theme
+*/
+
+:root {
+  --rt-primary: #0e4f72;
+  --rt-secondary: #0f7a8f;
+  --rt-accent: #f9a826;
+  --rt-bg: #f5f7fb;
+  --rt-card: #ffffff;
+  --rt-text: #243447;
+}
+
+body {
+  margin: 0;
+  font-family: "Tajawal", "Cairo", sans-serif;
+  color: var(--rt-text);
+  background: var(--rt-bg);
+  direction: rtl;
+}
+
+.site-header {
+  background: linear-gradient(135deg, var(--rt-primary), var(--rt-secondary));
+  color: #fff;
+  padding: 24px;
+}
+
+.site-branding h1,
+.site-branding p {
+  margin: 0;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.hero {
+  max-width: 1100px;
+  margin: 24px auto;
+  background: #fff;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 10px 24px rgba(15, 44, 74, 0.08);
+}
+
+.hero h2 {
+  margin-top: 0;
+}
+
+.metrics-grid {
+  max-width: 1100px;
+  margin: 0 auto 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+}
+
+.metric-card {
+  background: var(--rt-card);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(15, 44, 74, 0.06);
+}
+
+.metric-card strong {
+  display: block;
+  color: var(--rt-primary);
+  font-size: 1.7rem;
+  margin-top: 8px;
+}
+
+.site-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 24px;
+  color: #6b7a89;
+}
+
+@media (max-width: 640px) {
+  .site-header,
+  .hero,
+  .site-content {
+    border-radius: 0;
+  }
+}
